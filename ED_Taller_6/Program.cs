@@ -1,5 +1,7 @@
 namespace ED_Taller_6
 {
+    //Hola
+
     internal static class Program
     {
         /// <summary>
