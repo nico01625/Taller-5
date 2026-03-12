@@ -42,6 +42,8 @@ namespace ED_Taller_6
             front = 0;
             back = size;
         }
+
+        //------METODOS DE FILAS------
         public T Dequeue()
         {
             if (IsEmpty()) throw new InvalidOperationException("fila vacia");
@@ -54,7 +56,7 @@ namespace ED_Taller_6
         public void Enqueue(T item)
         {
             if (size == items.Length) Resize();
-            items[back] = item;
+            items[back] = item;//añade el elemento al final de la fila
             back = (back + 1) % items.Length;//se ahorra otro for
             size++;
         }
