@@ -122,5 +122,10 @@ namespace ED_Taller_6
             current = stackC;
             listaActual = listaC;
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
