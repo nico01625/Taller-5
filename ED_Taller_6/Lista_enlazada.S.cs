@@ -4,7 +4,7 @@ using System.Reflection;
 using System.Text;
 using System.Xml.Linq;
 
-namespace Est_Taller3
+namespace Est_Taller_6
 {
     class LinkedLista<T> : ILista<T>
     {
