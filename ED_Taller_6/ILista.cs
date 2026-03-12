@@ -16,6 +16,10 @@ namespace ED_Taller_6
         void RemoveFirst();
         void RemoveLast();
         bool Remove(T dato);
+        //Lista Simple
+        void InsertAt(int index, T data);
+        void Clear();
 
     }
+
 }
