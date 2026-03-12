@@ -30,63 +30,140 @@ namespace ED_Taller_6
             selectB = new Button();
             selectC = new Button();
             SuspendLayout();
-
+            // 
+            // button1
+            // 
+            button1.Location = new Point(230, 301);
+            button1.Name = "button1";
+            button1.Size = new Size(121, 32);
+            button1.TabIndex = 0;
             button1.Text = "Add";
-            button1.Location = new Point(249, 301);
             button1.Click += button1_Click;
-
-            label1.Location = new Point(249, 265);
+            // 
+            // label1
+            // 
             label1.AutoSize = true;
-
+            label1.Location = new Point(249, 265);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 20);
+            label1.TabIndex = 1;
+            // 
+            // stackA
+            // 
             stackA.Location = new Point(29, 34);
+            stackA.Name = "stackA";
             stackA.Size = new Size(145, 104);
-
-            stackB.Location = new Point(230, 34);
-            stackB.Size = new Size(145, 104);
-
-            stackC.Location = new Point(438, 34);
-            stackC.Size = new Size(145, 104);
-
+            stackA.TabIndex = 2;
+            // 
+            // Limpiar
+            // 
+            Limpiar.Location = new Point(438, 261);
+            Limpiar.Name = "Limpiar";
+            Limpiar.Size = new Size(145, 27);
+            Limpiar.TabIndex = 5;
             Limpiar.Text = "Clear";
-            Limpiar.Location = new Point(506, 265);
             Limpiar.Click += Limpiar_Click;
-
-            textBox1.Location = new Point(230, 238);
-            textBox1.Width = 121;
-
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(230, 261);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(121, 27);
+            textBox1.TabIndex = 6;
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
+            // stackB
+            // 
+            stackB.Location = new Point(230, 34);
+            stackB.Name = "stackB";
+            stackB.Size = new Size(145, 104);
+            stackB.TabIndex = 3;
+            // 
+            // stackC
+            // 
+            stackC.Location = new Point(438, 34);
+            stackC.Name = "stackC";
+            stackC.Size = new Size(145, 104);
+            stackC.TabIndex = 4;
+            // 
+            // quitar
+            // 
+            quitar.Location = new Point(29, 261);
+            quitar.Name = "quitar";
+            quitar.Size = new Size(145, 27);
+            quitar.TabIndex = 7;
             quitar.Text = "Pop";
-            quitar.Location = new Point(29, 265);
             quitar.Click += Pop;
-
-            txtA.Location = new Point(71, 12);
+            // 
+            // txtA
+            // 
             txtA.AutoSize = true;
-
-            txtB.Location = new Point(277, 12);
+            txtA.Location = new Point(71, 12);
+            txtA.Name = "txtA";
+            txtA.Size = new Size(0, 20);
+            txtA.TabIndex = 8;
+            // 
+            // txtB
+            // 
             txtB.AutoSize = true;
-
-            txtC.Location = new Point(482, 12);
+            txtB.Location = new Point(277, 12);
+            txtB.Name = "txtB";
+            txtB.Size = new Size(0, 20);
+            txtB.TabIndex = 9;
+            // 
+            // txtC
+            // 
             txtC.AutoSize = true;
-
+            txtC.Location = new Point(482, 12);
+            txtC.Name = "txtC";
+            txtC.Size = new Size(0, 20);
+            txtC.TabIndex = 10;
+            // 
+            // selectA
+            // 
+            selectA.Location = new Point(29, 142);
+            selectA.Name = "selectA";
+            selectA.Size = new Size(145, 38);
+            selectA.TabIndex = 11;
             selectA.Text = "Select";
-            selectA.Location = new Point(50, 142);
             selectA.Click += selectA_Click;
-
+            // 
+            // selectB
+            // 
+            selectB.Location = new Point(230, 142);
+            selectB.Name = "selectB";
+            selectB.Size = new Size(145, 38);
+            selectB.TabIndex = 12;
             selectB.Text = "Select";
-            selectB.Location = new Point(260, 142);
             selectB.Click += selectB_Click;
-
+            // 
+            // selectC
+            // 
+            selectC.Location = new Point(438, 142);
+            selectC.Name = "selectC";
+            selectC.Size = new Size(145, 38);
+            selectC.TabIndex = 13;
             selectC.Text = "Select";
-            selectC.Location = new Point(461, 142);
             selectC.Click += selectC_Click;
-
-            ClientSize = new Size(635, 338);
-            Controls.AddRange(new Control[] {
-                button1,label1,stackA,stackB,stackC,
-                Limpiar,textBox1,quitar,
-                txtA,txtB,txtC,
-                selectA,selectB,selectC
-            });
-
+            // 
+            // Form1
+            // 
+            ClientSize = new Size(909, 417);
+            Controls.Add(button1);
+            Controls.Add(label1);
+            Controls.Add(stackA);
+            Controls.Add(stackB);
+            Controls.Add(stackC);
+            Controls.Add(Limpiar);
+            Controls.Add(textBox1);
+            Controls.Add(quitar);
+            Controls.Add(txtA);
+            Controls.Add(txtB);
+            Controls.Add(txtC);
+            Controls.Add(selectA);
+            Controls.Add(selectB);
+            Controls.Add(selectC);
+            Name = "Form1";
             Text = "Lista Doblemente Enlazada";
             ResumeLayout(false);
             PerformLayout();
