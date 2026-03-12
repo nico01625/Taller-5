@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace EST_estructuras
+namespace ED_Taller_6
 {
     internal interface ILista<T>
     {

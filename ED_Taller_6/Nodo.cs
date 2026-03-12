@@ -1,10 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ED_Taller_6
+﻿namespace ED_Taller_6
 {
-    internal class Nodo
+    public class Nodo<T>
     {
+        public T Dato;
+        public Nodo<T> Siguiente;
+        public Nodo<T> Anterior;
+
+        public Nodo(T dato)
+        {
+            Dato = dato;
+            Siguiente = null;
+            Anterior = null;
+        }
     }
 }
